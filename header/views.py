@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from django.http import JsonResponse
-from . import driver
+from .ChessBind import driver
 
 def index(request):
     return JsonResponse({'foo': 'bar'})
 
-def player(request):
+def posmove(request):
+    return JsonResponse(driver.allmoves())
+
+def play(request):
     return JsonResponse(driver.allmoves())
 # Create your views here.
