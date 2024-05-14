@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class HeaderConfig(AppConfig):
+class BrainworkConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'header'
+    name = 'brainwork'

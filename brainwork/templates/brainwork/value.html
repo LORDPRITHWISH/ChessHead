@@ -1,0 +1,12 @@
+{% extends "brainwork/base.html" %}
+{% block content %}
+<h1>HELLO</h1>
+<h2>WELCOME TO {{input}}</h2>
+<form method="POST">
+    {% csrf_token %}
+    <h3>ENTER {{input}}</h3>
+    <input type="text" name="value" placeholder="value">
+    <button type="submit">GET</button>
+</form>
+
+{% endblock content %}

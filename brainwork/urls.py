@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path('',views.index),
-    path('posmove/',views.posmove),
-    path('play/',views.play)
+    path('posmove/',views.posmove,name='posmove'),
+    path('play/',views.play,name='play')
 ]
